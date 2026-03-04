@@ -1,0 +1,11 @@
+FROM docker.n8n.io/n8nio/n8n:latest
+
+ENV N8N_PORT=10000
+ENV N8N_PROTOCOL=https
+ENV NODE_ENV=production
+ENV GENERIC_TIMEZONE=America/Los_Angeles
+ENV TZ=America/Los_Angeles
+ENV N8N_SECURE_COOKIE=false
+ENV N8N_RUNNERS_ENABLED=false
+
+EXPOSE 10000
